@@ -41,3 +41,4 @@
 /home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb
 /home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.genruntimeconfig.cache
 /home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.sourcelink.json

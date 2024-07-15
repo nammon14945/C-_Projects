@@ -31,6 +31,11 @@ namespace ConsoleApp1
             //ShippingCosts();
             //LeapYear_Checking();
             //CalculateTaxes();
+            //TemperatureUnitConverter();
+            //CalculaTeheFare();
+            //FindingTwinPrimes();
+            DrawTheNumber();
+
         }
 
 
@@ -230,8 +235,108 @@ namespace ConsoleApp1
             if (unit == "C"){
                 double fahrenheit = (temperature * 9 / 5) + 32;
                 double kelvin = temperature + 273.15;
-                Console.WriteLine(${temperature} C)
+                Console.WriteLine($"{temperature} C = {fahrenheit} F = {kelvin} K");
+            }
+            else if (unit == "F"){
+                double celsius = (temperature - 32) * 5/9;
+                double kelvin = celsius + 273.15;
+                Console.WriteLine($"{temperature} F = {celsius} C = {kelvin} K");
+            }
+            else if (unit == "K"){
+                double celcius = temperature - 273.15;
+                double fahrenheit = (celcius * 9 / 5) + 32;
+                Console.WriteLine($"{temperature} K = {celcius} C = {fahrenheit} F");
+            }
+            else{
+                Console.WriteLine("Invalid temperature unit");
             }
          }
+
+
+
+
+
+         static void CalculateTheFare(){
+            Console.Write("Please enter the number of stations traveled: ");
+            int stations = int.Parse(Console.ReadLine());
+
+            int fare = 0;
+
+            if(stations >= 1 && stations <= 3){
+                fare = 16;
+            }
+            else if(stations >= 4 && stations <= 8){
+                fare = 23;
+            }
+            else if(stations >= 9){
+                fare = 31;
+            }
+            else{
+                Console. WriteLine("Invalid number of stations");
+                return;
+            }
+            Console.WriteLine($"The fare is: {fare} THB");
+         }
+
+
+
+
+
+        static void FindingTwinPrimes(){
+            Console.Write("Please enter the upper limit n: ");
+            int n = int.Parse(Console.ReadLine());
+
+            bool IsPrime(int number){
+                if(number <= 1) return false;
+                if(number == 2) return true;
+                if(number % 2 == 0) return false;
+                for(int i = 3; i <= Math.Sqrt(number); i += 2){
+                    if(number % i == 0) return false;
+                }
+                return true;
+            }
+                List<(int,int)> twinPrimes = new List<(int, int)>();
+                for(int i = 2; i <= n - 2; i++){
+                    if(IsPrime(i) && IsPrime(i+2)){
+                        twinPrimes.Add((i, i + 2));
+                    }
+                }
+                Console.WriteLine("The twin primes found are:");
+                foreach(var pair in twinPrimes){
+                    Console.WriteLine($"({pair.Item1}, {pair.Item2})");
+                }
+                Console.WriteLine($"The total number of pairs is: {twinPrimes.Count}");
+        }
+
+
+
+
+
+        static void DrawTheNumber(){
+            int height = 0;
+
+            while(true){
+                Console.Write("Please enter the height of the number 8 (must be greater than 5): ");
+                height = int.Parse(Console.ReadLine());
+
+                if(height > 5){
+                    break;
+                }
+                else{
+                    Console.WriteLine("Invalid input. Please enter again.");
+                }
+            }
+            for(int i = 0; i < height; i++){
+                for(int j = 0; j < height; j++){
+                    if(i == 0 || i == height / 2 || i == height - 1 || j == 0 || j == height - 1){
+                        Console.Write("*");
+                    }
+                    else{
+                        Console.Write(" ");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }
