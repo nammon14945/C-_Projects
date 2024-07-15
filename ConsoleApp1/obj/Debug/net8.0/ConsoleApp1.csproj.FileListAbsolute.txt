@@ -1,0 +1,43 @@
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.deps.json
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.runtimeconfig.json
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.pdb
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.dll
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/refint/ConsoleApp1.dll
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.genruntimeconfig.cache
+/home/nammon/Desktop/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.deps.json
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.runtimeconfig.json
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.pdb
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.sourcelink.json
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.dll
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/refint/ConsoleApp1.dll
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.genruntimeconfig.cache
+/home/nammon/Desktop/Workspace/workspace/C# Projects/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.deps.json
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.runtimeconfig.json
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.pdb
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.dll
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/refint/ConsoleApp1.dll
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.genruntimeconfig.cache
+/home/nammon/Desktop/my_workspace/workspace/C#_Projects/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll
