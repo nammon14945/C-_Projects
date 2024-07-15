@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
  
-//.....
+//
 //64020653 Nammon Ongkakas
 
 enum DayOfWeek{
