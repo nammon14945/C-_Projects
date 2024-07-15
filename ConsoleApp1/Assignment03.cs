@@ -34,8 +34,10 @@ namespace ConsoleApp1
             //TemperatureUnitConverter();
             //CalculaTeheFare();
             //FindingTwinPrimes();
-            DrawTheNumber();
-
+            //DrawTheNumber();
+            //TemperatureConverter();
+            //Testing();
+            Calculator();
         }
 
 
@@ -68,31 +70,30 @@ namespace ConsoleApp1
 
 
 
-         static void PasswordChecking()
-         {
-             string specialCharacters = "!@#$%^&*";
-             string pwd;
-             Console.Write("Create your Password: ");
-             pwd = Convert.ToString(Console.ReadLine());
-             int characterCount = pwd.Length;
-             int uppercaseCount = pwd.Count(char.IsUpper);
-             int lowercaseCount = pwd.Count(char.IsLower);
-             int digitCount = pwd.Count(char.IsDigit);
-             int specialCharactersCount = pwd.Count(c => specialCharacters.Contains(c));
+        static void PasswordChecking(){
+            string specialCharacters = "!@#$%^&*";
+            string pwd;
+            Console.Write("Create your Password: ");
+            pwd = Convert.ToString(Console.ReadLine());
+            int characterCount = pwd.Length;
+            int uppercaseCount = pwd.Count(char.IsUpper);
+            int lowercaseCount = pwd.Count(char.IsLower);
+            int digitCount = pwd.Count(char.IsDigit);
+            int specialCharactersCount = pwd.Count(c => specialCharacters.Contains(c));
 
-             if((characterCount >= 8) && (uppercaseCount >= 1) && (lowercaseCount >= 1) && (digitCount >= 1) && (specialCharactersCount >= 1)){
+            if((characterCount >= 8) && (uppercaseCount >= 1) && (lowercaseCount >= 1) && (digitCount >= 1) && (specialCharactersCount >= 1)){
                 Console.WriteLine("Password created successfully");
-             }
-             else if((characterCount < 8) || (uppercaseCount < 1) || (lowercaseCount < 1) || (digitCount < 1) || (specialCharactersCount < 1)){
+            }
+            else if((characterCount < 8) || (uppercaseCount < 1) || (lowercaseCount < 1) || (digitCount < 1) || (specialCharactersCount < 1)){
                 Console.WriteLine("Password can not create, Please try again.");
-             }
-         }
+            }
+        }
 
 
 
 
 
-         static void VerifyHolidays(){
+        static void VerifyHolidays(){
             Console.Write("Enter a date to check (YYYY-MM-DD): ");
             string InputDate = Console.ReadLine();
             
@@ -125,7 +126,7 @@ namespace ConsoleApp1
                 }
             }
             return false;
-        }        
+        }
         static bool IsSpecialHoliday(DateTime date){
             DateTime[] specialHolidays = {
             new DateTime(date.Year, 10, 22),
@@ -167,13 +168,13 @@ namespace ConsoleApp1
             }
 
             Console.WriteLine($"The shipping cost is: {shippingCosts} THB");
-         }
+        }
 
 
 
 
 
-         static void LeapYear_Checking(){
+        static void LeapYear_Checking(){
             Console.Write("Please enter the year: ");
             int year = int.Parse(Console.ReadLine());
 
@@ -196,13 +197,13 @@ namespace ConsoleApp1
             else{
                 Console.WriteLine($"{year} is not a leap year");
             }
-         }
+        }
 
 
 
 
 
-         static void CalculateTaxes(){
+        static void CalculateTaxes(){
             Console.Write("Please enter your annual income (THB): ");
             double income = double.Parse(Console.ReadLine());
 
@@ -219,13 +220,13 @@ namespace ConsoleApp1
             }
 
             Console.WriteLine($"The tax to be paid is: {tax} THB");
-         }
+        }
 
 
 
 
 
-         static void TemperatureUnitConverter(){
+        static void TemperatureUnitConverter(){
             Console.Write("Please enter the temperature value: ");
             double temperature = double.Parse(Console.ReadLine());
 
@@ -250,13 +251,13 @@ namespace ConsoleApp1
             else{
                 Console.WriteLine("Invalid temperature unit");
             }
-         }
+        }
 
 
 
 
 
-         static void CalculateTheFare(){
+        static void CalculateTheFare(){
             Console.Write("Please enter the number of stations traveled: ");
             int stations = int.Parse(Console.ReadLine());
 
@@ -276,7 +277,7 @@ namespace ConsoleApp1
                 return;
             }
             Console.WriteLine($"The fare is: {fare} THB");
-         }
+        }
 
 
 
@@ -338,5 +339,120 @@ namespace ConsoleApp1
                 Console.WriteLine();
             }
         }
+
+
+
+
+
+        //ASSIGNMENT4 STARTING BELOW
+
+
+
+
+
+        static void Testing(){
+            Console.WriteLine("Enter temperature value:");
+            double temperature = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the unit of the given temperature (C/F/K):");
+            char unit = char.ToUpper(Console.ReadKey().KeyChar);
+            Console.WriteLine();
+
+            Console.WriteLine("Enter the unit to convert to (C/F/K):");
+            char targetUnit = char.ToUpper(Console.ReadKey().KeyChar);
+            Console.WriteLine();
+
+            double convertedTemp = ConvertTemperature(temperature, unit, targetUnit);
+
+            Console.WriteLine($"The converted temperature is {convertedTemp} {targetUnit}");
+        }
+
+
+
+
+
+        static void TemperatureConverter(){
+            Console.WriteLine("Enter temperature value:");
+            double temperature = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the unit of the given temperature (C/F/K):");
+            char unit = char.ToUpper(Console.ReadKey().KeyChar);
+            Console.WriteLine();
+
+            Console.WriteLine("Enter the unit to convert to (C/F/K):");
+            char targetUnit = char.ToUpper(Console.ReadKey().KeyChar);
+            Console.WriteLine();
+
+            double convertedTemp = ConvertTemperature(temperature, unit, targetUnit);
+
+            Console.WriteLine($"The converted temperature is {convertedTemp} {targetUnit}");
+        }
+
+        static double ConvertTemperature(double temperature, char fromUnit, char toUnit){
+            switch (fromUnit){
+                case 'C':
+                    if (toUnit == 'F')
+                        return (temperature * 9 / 5) + 32;
+                    else if (toUnit == 'K')
+                        return temperature + 273.15;
+                    break;
+                case 'F':
+                    if (toUnit == 'C')
+                        return (temperature - 32) * 5 / 9;
+                    else if (toUnit == 'K')
+                        return (temperature - 32) * 5 / 9 + 273.15;
+                    break;
+                case 'K':
+                    if (toUnit == 'C')
+                        return temperature - 273.15;
+                    else if (toUnit == 'F')
+                        return (temperature - 273.15) * 9 / 5 + 32;
+                    break;
+            }
+            return temperature;
+        }
+
+
+
+
+
+        public static void Calculator(){
+            Console.WriteLine("Enter first number:");
+            double num1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter second number:");
+            double num2 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter operation (+, -, *, /):");
+            char operation = Console.ReadKey().KeyChar;
+            Console.WriteLine();
+
+            double result = PerformOperation(num1, num2, operation);
+            Console.WriteLine($"The result is: {result}");
+        }
+
+        public static double PerformOperation(double num1, double num2, char operation){
+            switch (operation){
+                case '+':
+                    return num1 + num2;
+                case '-':
+                    return num1 - num2;
+                case '*':
+                    return num1 * num2;
+                case '/':
+                    if (num2 != 0)
+                        return num1 / num2;
+                    else
+                        throw new DivideByZeroException("Cannot divide by zero");
+                default:
+                    throw new ArgumentException("Invalid operation");
+            }
+        }
+
+
+
+
+
+        
     }
 }
