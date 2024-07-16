@@ -45,54 +45,54 @@ namespace ConsoleApp1{
 
 
             //employee management system****************************************************************start//
-            // EmployeeManagementSystem ems = new EmployeeManagementSystem();
+            EmployeeManagementSystem ems = new EmployeeManagementSystem();
         
-            // while (true){
-            //     Console.WriteLine("\nEmployee Management System");
-            //     Console.WriteLine("1. Add new employee");
-            //     Console.WriteLine("2. Remove employee");
-            //     Console.WriteLine("3. Update employee information");
-            //     Console.WriteLine("4. Display all employees");
-            //     Console.WriteLine("5. Exit program");
-            //     Console.Write("Choose an operation (1-5): ");
+            while (true){
+                Console.WriteLine("\nEmployee Management System");
+                Console.WriteLine("1. Add new employee");
+                Console.WriteLine("2. Remove employee");
+                Console.WriteLine("3. Update employee information");
+                Console.WriteLine("4. Display all employees");
+                Console.WriteLine("5. Exit program");
+                Console.Write("Choose an operation (1-5): ");
 
-            //     string choice = Console.ReadLine();
+                string choice = Console.ReadLine();
 
-            //     switch (choice){
-            //         case "1":
-            //             Console.Write("Enter employee ID: ");
-            //             int id = int.Parse(Console.ReadLine());
-            //             Console.Write("Enter employee name: ");
-            //             string name = Console.ReadLine();
-            //             Console.Write("Enter employee position: ");
-            //             string position = Console.ReadLine();
-            //             ems.AddEmployee(id, name, position);
-            //             break;
-            //         case "2":
-            //             Console.Write("Enter ID of employee to remove: ");
-            //             int removeId = int.Parse(Console.ReadLine());
-            //             ems.RemoveEmployee(removeId);
-            //             break;
-            //         case "3":
-            //             Console.Write("Enter ID of employee to update: ");
-            //             int updateId = int.Parse(Console.ReadLine());
-            //             Console.Write("Enter new name: ");
-            //             string newName = Console.ReadLine();
-            //             Console.Write("Enter new position: ");
-            //             string newPosition = Console.ReadLine();
-            //             ems.UpdateEmployee(updateId, newName, newPosition);
-            //             break;
-            //         case "4":
-            //             ems.DisplayAllEmployees();
-            //             break;
-            //         case "5":
-            //             Console.WriteLine("Thank you for using the service");
-            //             return;
-            //         default:
-            //             Console.WriteLine("Please choose menu 1-5 only");
-            //             break;
-            //     }
-            // }
+                switch (choice){
+                    case "1":
+                        Console.Write("Enter employee ID: ");
+                        int id = int.Parse(Console.ReadLine());
+                        Console.Write("Enter employee name: ");
+                        string name = Console.ReadLine();
+                        Console.Write("Enter employee position: ");
+                        string position = Console.ReadLine();
+                        ems.AddEmployee(id, name, position);
+                        break;
+                    case "2":
+                        Console.Write("Enter ID of employee to remove: ");
+                        int removeId = int.Parse(Console.ReadLine());
+                        ems.RemoveEmployee(removeId);
+                        break;
+                    case "3":
+                        Console.Write("Enter ID of employee to update: ");
+                        int updateId = int.Parse(Console.ReadLine());
+                        Console.Write("Enter new name: ");
+                        string newName = Console.ReadLine();
+                        Console.Write("Enter new position: ");
+                        string newPosition = Console.ReadLine();
+                        ems.UpdateEmployee(updateId, newName, newPosition);
+                        break;
+                    case "4":
+                        ems.DisplayAllEmployees();
+                        break;
+                    case "5":
+                        Console.WriteLine("Thank you for using the service");
+                        return;
+                    default:
+                        Console.WriteLine("Please choose menu 1-5 only");
+                        break;
+                }
+            }
             //employee management system****************************************************************end//
 
 
@@ -689,13 +689,12 @@ namespace ConsoleApp1{
         static string ToUpper(string str){
             return str.ToUpper();
         }
-
-
-
-
-
-
     }
+
+
+
+
+
     //employee management system****************************************************************//
     class Employee{
         public int Id { get; set; }
@@ -757,7 +756,7 @@ namespace ConsoleApp1{
 
 
 
-
+    //inventory management system****************************************************************//
     class Product{
         public string Name { get; set; }
         public double Price { get; set; }
@@ -816,4 +815,5 @@ namespace ConsoleApp1{
             }
         }
     }
+    //inventory management system****************************************************************//
 }
