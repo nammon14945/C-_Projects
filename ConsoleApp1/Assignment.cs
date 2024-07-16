@@ -22,24 +22,24 @@ enum DayOfWeek{
 namespace ConsoleApp1{
     class Assignment{
         static void Main(string[] args){
-            //ApplyForWork();
-            //PasswordChecking();
-            //VerifyHolidays();
-            //ShippingCosts();
-            //LeapYear_Checking();
-            //CalculateTaxes();
-            //TemperatureUnitConverter();
-            //CalculaTeheFare();
-            //FindingTwinPrimes();
-            //DrawTheNumber();
-            //TemperatureConverter();
-            //Testing();
-            //Calculator();
-            //PalindromeChecking();
-            //InputNumbers();
-            //EntryPoint_01();
-            //StringManipulation();
-            //();
+            ApplyForWork();
+            PasswordChecking();
+            VerifyHolidays();
+            ShippingCosts();
+            LeapYear_Checking();
+            CalculateTaxes();
+            TemperatureUnitConverter();
+            CalculateTheFare();
+            FindingTwinPrimes();
+            DrawTheNumber();
+            TemperatureConverter();
+            Testing();
+            Calculator();
+            PalindromeChecking();
+            InputNumbers();
+            EntryPoint_01();
+            StringManipulation();
+            
 
 
 
